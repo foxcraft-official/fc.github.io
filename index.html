@@ -1,96 +1,99 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="icons/logo.png">
-    
-    <title>FoxCraft</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="assets/general.js"></script>
+    <title>FoxCraft | General</title>
+    <link href="assets/logo.ico" rel="icon">
+    <link href="assets/global.css" rel="stylesheet" type="text/css">
+    <link href="assets/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header>
-        <div class="content">
-            <div class="head">
-                <div class="logo">
-                    <a href="#to_top">
-                        <img src="icons/logo.png" alt="Логотип" class="logo_img">
-                    </a>
-                </div>
-                <nav class="menu">
-                    <ul class="menu_ul">
-                        <li class="menu_item">
-                            <a href="#to_top" class="menu_item">Главная</a>
-                        </li>
-                        <li class="menu_item">
-                            <a href="#to_about" class="menu_item">О нас</a>
-                        </li>
-                        <li class="menu_item">
-                            <a href="/foxcraft.github.io/docs" class="menu_item">Правила</a>
-                        </li>
-                        <li class="login">
-                            <a href="https://discord.gg/yxkfnW7sQQ" target="_blank" class="login">Зайти на сервер</a>
-                        </li>
-                    </ul>
-                </nav>
+        <div class="container-md">
+            <div class="logo">
+                <a href="index.html" class="inactive"><img src="assets/logo.png" alt="FoxCraft" title="FoxCraft"></a>
             </div>
+            <nav>
+                <a href="index.html" title="Главная">Главная</a>
+                <a href="docs.html" title="Правила">Правила</a>
+                <a href="index.html#about" title="О нас">О нас</a>
+                <a href="https://discord.gg/yxkfnW7sQQ" class="joinServer inactive" title="Присоедениться">Присоедениться</a>
+            </nav>
         </div>
     </header>
-    <main>
-        <div class="main_fone" id="to_top">
-            <div class="content">
-                <div class="title_box">
-                    <h1 class="title">Добро пожаловать на FoxCraft</h1>
-                    <h2 class="title2"><a class="link" href="https://discord.gg/yxkfnW7sQQ" target="_blank">Присоединяйтесь</a> к нам!</h2>
+    <div class="poster container-xl">
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="asyncImage" src="assets/fone-x3.jpg" qualities='["assets/fone-x2.jpg","assets/fone-original.jpg"]' width="100%">
+            <div class="position-absolute header-title text-white text-center">
+                <h1>Добро пожаловать на FoxCraft</h1>
+                <h3>Присоединяйтесь к нам!</h3>
+            </div>
+        </div>
+    </div>
+    <main class="container-xl">
+        <div class="row p-4">
+            <div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+                <img class="asyncImage art" src="assets/fox-x2.jpg" qualities='["assets/fox-original.jpg"]'>
+            </div>
+            <div class="col-12 col-md-9 d-flex align-items-center justify-content-center" id="about">
+                <div>
+                    <h1>О нас</h1>
+                    <p>
+                        FoxCraft - это сервер для общения друзей и веселого времяпровождения! Вам здесь будут рады в любом
+                        случае :3 Конечно мы не идеальны, как и всё, и здесь также присутствуют свои токсики, но даже они
+                        крайне милые^^ Наш сервер объединяет разнообразные группы людей, в том числе и по интересам,
+                        например: фанаты Hollow Knight, Minecraft'а, Селесты и каждый может найти общий язык друг с другом!
+                        Мы не просто какой-то сервер - мы объединение друзей и друзей друзей. Мы FoxCraft!
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="about_body" id="to_about">
-            <div class="content">
-                <div class="about">
-                    <div class="about_text">                  
-                        <h1 class="title1 white">╭═────═ ⌘ О нас ⌘═────═╮</h1>
-                        <p class="text white">FoxCraft это сервер для общения друзей и веселого времяпровождения! Вам здесь будут рады в любом случае :3 Конечно мы не идеальны, как и всё, и здесь также присутствуют свои токсики, но даже они крайне милые^^
-                            Наш сервер объединяет разнообразные группы людей, в том числе и по интересам, например: фанаты Hollow Knight, Minecraft'а, Селесты и каждый может найти общий язык друг с другом!
-                            Мы не просто какой-то сервер - мы объединение друзей и друзей друзей. Мы FoxCraft!</p>
-                    </div>
-                    <img src="icons/fox.jpg" alt="" class="small_img">
-                </div>
-            </div>
-        </div>
-        <div class="rules_body" id="to_rules">
-            <div class="content">
-                <div class="rules">
-                    <div class="rules_text">
-                        <h1 class="title1">╭═──═ ⌘ Основные правила ⌘═──═╮</h1>
-                            <p class="text"><b>Пожалуйста, проявляйте уважение к любому человеку в чате, будь то он ваш друг или кто-то еще, кого вы не знаете..</b>
-                            <p class="text">1. Запрещен спам, флуд, сообщения не несущие смысловой нагрузки..</p>
-                            <p class="text">2. Запрещены оскорбления, если они оскорбительны...</p>
-                            <p class="text">3. Угрозы, если они реально угрожающие - запрещены.</p>
-                            <p class="text"><b>Правила сервера в майнкрафте:</b></p>
-                            <p class="text">1. Запрещено использование читов, в том числе ресурспаков x-ray, а так же стороннего софта который даёт вам преимущество над другими игроками.</p>
-                            <p class="text">2. Запрещено использование любых дюпов майнкрафта кроме дюпа взрывов.</p>
-                            <p class="text">3. Запрещено гриферство</p>
-                            <p class="text">4. Запрещён нон рп!</p>
-                            <p class="text margt"><u>Более подробные правила вы найдете в нашем дискорде и по <a href="https://foxcraft-official.github.io/foxcraft.github.io/docs"" class="black">ссылке</a>!</u></p>
-                            <p class="text"></p>
-                            <p class="text"></p>
-                    </div>
-
+        <div class="color-revert d-flex align-items-center row p-4" id="main-rules">
+            <div>
+                <h1>Основные правила</h1>
+                <p>
+                    Пожалуйста, проявляйте уважение к любому человеку в чате, будь то он ваш друг или кто-то еще, кого
+                    вы не знаете..
+                </p>
+                <h3>Правила в Дискорд:</h3>
+                <ol>
+                    <li>Запрещен спам, флуд, сообщения не несущие смысловой нагрузки..</li>
+                    <li>Запрещены оскорбления, если они оскорбительны...</li>
+                    <li>Угрозы, если они реально угрожающие - запрещены.</li>
+                </ol>
+                <h3>Правила сервера в майнкрафте:</h3>
+                <ol>
+                    <li>
+                        Запрещено использование читов, в том числе ресурспаков x-ray, а так же стороннего софта который
+                        даёт вам преимущество над другими игроками.
+                    </li>
+                    <li>Запрещено использование любых дюпов майнкрафта кроме дюпа взрывов.</li>
+                    <li>Запрещено гриферство.</li>
+                    <li>Запрещён нон рп!</li>
+                </ol>
+                <div class="border border-warning rounded p-2">
+                    Более подробные правила вы найдете в нашем дискорде или по <a href="docs.html" target="_blank">ссылке</a>!
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div class="content">
-            <div class="footer">
-                <label class="white text">FoxCraft 2020 - 2021</label>
-                <div class="btn"><a href="https://discord.gg/yxkfnW7sQQ" class="btn">Зайти на сервер!</a></div>
+        <div class="container-md">
+            <div class="row p-3">
+                <div class="col-12 col-sm-4 col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="https://discord.gg/yxkfnW7sQQ" class="joinServer" title="Присоедениться">Присоедениться</a>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="https://fle.su/" target="_blank" class="copyright"><img src="//d.fle.su/img/author.svg" width="128" style="filter:invert(1)"></a>
+                    <a class="copyright"><img src="assets/logo.png" width="128"></a>
+                </div>
             </div>
         </div>
     </footer>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
 </html>
