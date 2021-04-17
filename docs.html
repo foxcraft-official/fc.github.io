@@ -24,18 +24,24 @@
             </nav>
         </div>
     </header>
-    <main class="container-md">
+    <div class="poster container-xl">
+        <div class="d-flex justify-content-center align-items-center">
+            <img class="asyncImage" src="assets/rules-x4.jpg" qualities='["assets/rules-x3.jpg","assets/rules-x2.jpg","assets/rules-original.jpg"]' width="100%">
+            <h1 class="position-absolute header-title text-white">Документация</h1>
+        </div>
+    </div>
+    <main class="container-xl">
         <div class="row">
-            <div class="col-3">
-                <h2 style="color:var(--color)">Меню</h2>
+            <div class="col-3 sideMenuContainer">
+                <h2 style="color:var(--border)">Меню</h2>
                 <br/>
                 <ul class="sideMenu">
-                    <li><a scroll="#p-100">Основные правила</a></li>
+                    <li><a scroll="#p-110">Основные правила</a></li>
                     <li><ul>
                         <li><a scroll="#p-110">Правила чатика</a></li>
                         <li><a scroll="#p-120">Правила сервера в майнкрафт</a></li>
                     </ul></li>
-                    <li><a scroll="#p-200">Конституция</a></li>
+                    <li><a scroll="#p-210">Конституция</a></li>
                     <li><ul>
                         <li><a scroll="#p-210">Основные положения</a></li>
                         <li><a scroll="#p-220">Мэр FoxCraft</a></li>
@@ -46,7 +52,7 @@
                     </ul></li>
                 </ul>
             </div>
-            <div class="col-9 documentation">
+            <div class="col-md-9 col-lg-9 col-xl-9 col-xxl-9 col-sm-12 col-12 documentation">
                 <h2 class="point" id="p-100">Основные правила</h2>
                 <h3 class="point" id="p-110">Правила чатика</h3>
                 <p>
@@ -385,13 +391,13 @@
     </main>
     <footer>
         <div class="container-md">
-            <div class="row">
-                <div class="col-6 d-flex align-items-center justify-content-center">
-                    <a href="https://fle.su/" class="copyright"><img src="//d.fle.su/img/author.svg" width="128" style="filter:invert(1)"></a>
-                    <a class="copyright"><img src="assets/logo.png" width="128"></a>
-                </div>
-                <div class="col-6 d-flex align-items-center justify-content-center">
+            <div class="row p-3">
+                <div class="col-12 col-sm-4 col-md-6 d-flex align-items-center justify-content-center">
                     <a href="https://discord.gg/yxkfnW7sQQ" class="joinServer" title="Присоедениться">Присоедениться</a>
+                </div>
+                <div class="col-12 col-sm-8 col-md-6 d-flex align-items-center justify-content-center">
+                    <a href="https://fle.su/" target="_blank" class="copyright"><img src="//d.fle.su/img/author.svg" width="128" style="filter:invert(1)"></a>
+                    <a class="copyright"><img src="assets/logo.png" width="128"></a>
                 </div>
             </div>
         </div>

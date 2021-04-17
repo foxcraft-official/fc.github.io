@@ -2,9 +2,21 @@
   --background: #353230;
   --brand: #f66c00;
   --color: #d6d6d6;
+  --sideMenu: var(--color);
+  --border: var(--color);
+}
+@media (max-width: 768px) {
+  .sideMenuContainer {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  header .joinServer {
+    display: none;
+  }
+
 }
 body {
-  margin-top: 100px;
   background: repeating-linear-gradient(45deg,#000000 0px,#000000 1px, var(--background) 1px, var(--background) 20px);
   color: var(--color);
   &::-webkit-scrollbar {
@@ -12,7 +24,7 @@ body {
     background: var(--background);
   }
   &::-webkit-scrollbar-thumb {
-    background: var(--color);
+    background: var(--border);
     border: 4px solid var(--background);
   }
 }
@@ -31,6 +43,15 @@ ol {
     }
   }
 }
+.poster {
+  height: min(50vh,50vw);
+  overflow: hidden;
+  padding: 0;
+  .header-title {
+    top: calc(min(50vh, 50vw)/2);
+    text-shadow: 0 0 10px black;
+  }
+}
 header {
   top: 0;
   height: 50px;
@@ -39,6 +60,7 @@ header {
   position: fixed;
   width: 100%;
   box-shadow:  0 0 10px -3px #000;
+  z-index: 1;
   &>div {
     position: relative;
     &>* {
@@ -83,7 +105,7 @@ header {
   }
   .joinServer {
     position: absolute;
-    right: 0;
+    right: var(--bs-gutter-x,.75rem);
   }
 }
 .joinServer {
@@ -103,7 +125,7 @@ main {
 }
 .sideMenu {
   position: sticky;
-  top: max(5%, 70px);
+  top: max(5%, 100px);
   list-style: none;
   padding: 0;
   margin: auto;
@@ -115,7 +137,7 @@ main {
     a {
       padding: 0.2em;
       color: var(--background)!important;
-      background: var(--color);
+      background: var(--sideMenu);
       opacity: 0.8;
       transition: .2s;
       text-decoration: none;
@@ -129,17 +151,19 @@ main {
   }
 }
 main {
-  border: 3px solid var(--color);
+  border: 3px solid var(--border);
   border-bottom: none;
   border-top: none;
 }
 .documentation {
-  border-left: 3px solid var(--color);
+  border-left: 3px solid var(--border);
 }
 h2 {
-  background: var(--color);
+  position: sticky;
+  top: 49px;
+  background: var(--border);
   color: var(--background);
-  margin: auto calc(0px - var(--bs-gutter-x)/ 2);
+  margin: 0 calc(0px - var(--bs-gutter-x)/ 2) .5rem;
 }
 footer {
   background-color: #000;
