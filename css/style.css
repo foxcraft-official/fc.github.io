@@ -290,7 +290,7 @@ footer {
 .to_up {
     color: #fff;
     position: absolute;
-    bottom: -400px;
+    bottom: -35vh;
     left: 50px;
     width: 50px;
 }
