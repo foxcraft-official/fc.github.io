@@ -1,31 +1,6 @@
-:root {
-  --background: #353230;
-  --brand: #f66c00;
-  --color: #d6d6d6;
-  --sideMenu: var(--color);
-  --border: var(--color);
-}
 @media (max-width: 768px) {
   .sideMenuContainer {
     display: none;
-  }
-}
-@media (max-width: 450px) {
-  header .joinServer {
-    display: none;
-  }
-
-}
-body {
-  background: repeating-linear-gradient(45deg,#000000 0px,#000000 1px, var(--background) 1px, var(--background) 20px);
-  color: var(--color);
-  &::-webkit-scrollbar {
-    width: 20px;
-    background: var(--background);
-  }
-  &::-webkit-scrollbar-thumb {
-    background: var(--border);
-    border: 4px solid var(--background);
   }
 }
 ol {
@@ -51,77 +26,6 @@ ol {
     top: calc(min(50vh, 50vw)/2);
     text-shadow: 0 0 10px black;
   }
-}
-header {
-  top: 0;
-  height: 50px;
-  background: #0000006b;
-  backdrop-filter: blur(15px);
-  position: fixed;
-  width: 100%;
-  box-shadow:  0 0 10px -3px #000;
-  z-index: 1;
-  &>div {
-    position: relative;
-    &>* {
-      display: inline-block;
-    }
-  }
-  img {
-    height: 50px;
-  }
-  a[href]:not(.inactive) {
-    color: var(--color);
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    padding: 0 1em;
-    font-size: 1.1em;
-    &::before, &::after {
-      pointer-events: none;
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background: var(--color);
-      left: 50%;
-      bottom: -50%;
-      opacity: 0;
-      transition: .2s;
-    }
-    &::after {
-      transition: .2s .1s;
-    }
-    &:hover:before, &:hover:after {
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      opacity: .5;
-      transition: .2s;
-    }
-    &:hover:after {
-      transition: .2s .1s;
-    }
-  }
-  .joinServer {
-    position: absolute;
-    right: var(--bs-gutter-x,.75rem);
-  }
-}
-.joinServer {
-  background: var(--brand);
-  padding: 0.2em 1em;
-  color: #000;
-  text-decoration: none;
-  box-shadow: 0 0 50px -10px var(--brand);
-  transition: 0.5s;
-  &:hover {
-    color: #000;
-    box-shadow: 0 0 50px -5px var(--brand);
-  }
-}
-main {
-  background-color: var(--background);
 }
 .sideMenu {
   position: sticky;
@@ -150,11 +54,6 @@ main {
     opacity: 1;
   }
 }
-main {
-  border: 3px solid var(--border);
-  border-bottom: none;
-  border-top: none;
-}
 .documentation {
   border-left: 3px solid var(--border);
 }
@@ -164,14 +63,4 @@ h2 {
   background: var(--border);
   color: var(--background);
   margin: 0 calc(0px - var(--bs-gutter-x)/ 2) .5rem;
-}
-footer {
-  background-color: #000;
-}
-.copyright {
-  opacity: 0.4;
-  transition: 1s;
-  &:hover {
-    opacity: 1;
-  }
 }
