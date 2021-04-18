@@ -235,13 +235,11 @@ footer {
     height: 35vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .poster_img {
     width: 100%;
     size: 100%;
-    
 }
 .poster_txt {
     margin-top: 150px;
@@ -369,9 +367,12 @@ footer {
         display: none;
     }
     .rules_menu {
-        margin-top: 30px;
+        margin-top: 0px;
     }
     .poster_txt {
-        margin-top: 50px;
+        margin-top: 15vh;
+    }
+    .poster {
+        height: 100%;
     }
 }
