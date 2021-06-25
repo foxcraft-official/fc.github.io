@@ -185,6 +185,9 @@
 .margt {
     margin-top: 20px;
 }
+.map {
+    margin: 100px 20px;
+}
 footer {
     background-color: #35353a;
     height: 75px;
